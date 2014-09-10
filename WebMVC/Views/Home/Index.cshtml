@@ -1,0 +1,28 @@
+﻿@{
+    ViewBag.Title = @Invariants.ApplicationName;
+}
+<div class="row">
+    <div class="col-md-4 pull-right">
+        <h3>Supported languages</h3>
+        <h6>Current language: @Localized.ResourceLanguage</h6>
+        <ul>
+            @foreach (var c in ViewBag.Cultures)
+            {
+                <li>@c</li>
+            }
+        </ul>
+
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-2">
+        <h2>Greeting</h2>
+        <p>
+            @Localized.Greeting
+        </p>
+    </div>
+    <div class="col-md-2 col-lg-offset-1">
+        <h2>More</h2>
+        <p>Here</p>
+    </div>
+</div>

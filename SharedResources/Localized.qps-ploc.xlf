@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 xliff-core-1.2-transitional.xsd">
+  <file datatype="xml" source-language="en" target-language="qps-ploc" original="Localized.resx" tool-id="MultilingualAppToolkit" product-name="SharedResources" product-version="1.0.0.0" build-num="0">
+    <header>
+      <tool tool-id="MultilingualAppToolkit" tool-name="Multilingual App Toolkit" tool-version="3.1.1085.0" tool-company="Microsoft" />
+    </header>
+    <body>
+      <group id="Resx">
+        <trans-unit id="Resx/About" translate="yes" xml:space="preserve">
+          <source>About</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[84FD0][!!_Áвôûť_!!]</target>
+        </trans-unit>
+        <trans-unit id="Resx/Greeting" translate="yes" xml:space="preserve">
+          <source>Hello</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[512CC][!!_Нêļĺõ_!!]</target>
+        </trans-unit>
+        <trans-unit id="Resx/Home" translate="yes" xml:space="preserve">
+          <source>Home</source>
+          <target state="needs-review-translation" state-qualifier="mt-suggestion">[C13DD][!!_Ħõмę_!!]</target>
+        </trans-unit>
+        <trans-unit id="Resx/ResourceLanguage" translate="yes" xml:space="preserve">
+          <source>en</source>
+          <target state="translated">qps-ploc</target>
+        </trans-unit>
+      </group>
+    </body>
+  </file>
+</xliff>
