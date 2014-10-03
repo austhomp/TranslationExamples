@@ -43,7 +43,7 @@ namespace Universal.Common
         /// reading and writing session state.  Initially empty, additional types may be
         /// added to customize the serialization process.
         /// </summary>
-        public static List<Type> KnownTypes
+        public static IEnumerable<Type> KnownTypes
         {
             get { return _knownTypes; }
         }

@@ -12,7 +12,7 @@ namespace WebMVC.Controllers
         {
             var factory = new CultureHelper.CultureHelperFactory();
             var helper = factory.Create();
-            var list = helper.SupportedCultures;
+            var list = helper.SupportedCultureNames;
             ViewBag.Cultures = list;
             return View();
         }

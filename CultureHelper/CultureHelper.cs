@@ -12,21 +12,33 @@ namespace CultureHelper
     {
         private List<CultureInfo> _cultures;
 
-        public IEnumerable<string> SupportedCultures
+        public IEnumerable<string> SupportedCultureNames
         {
             get
             {
                 if (_cultures == null)
                 {
-                    _cultures = GetSupportedCultures();
+                    _cultures = GetSupportedCultures().ToList();
                 }
                 
                 return _cultures.Select(x => x.DisplayName);
             }
         }
+        public IEnumerable<CultureInfo> SupportedCultures
+        {
+            get
+            {
+                if (_cultures == null)
+                {
+                    _cultures = GetSupportedCultures().ToList();
+                }
+                
+                return _cultures.AsReadOnly();
+            }
+        }
 
         // Based on this answer http://stackoverflow.com/a/3227549/269608 by Hans Holzbart
-        private List<CultureInfo> GetSupportedCultures()
+        private IEnumerable<CultureInfo> GetSupportedCultures()
         {
             ResourceManager rm = new ResourceManager(typeof(SharedResources.Localized));
 

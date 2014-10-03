@@ -28,12 +28,64 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            this.button1 = new System.Windows.Forms.Button();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label1 = new System.Windows.Forms.Label();
+            this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
+            this.languageSelector = new System.Windows.Forms.ComboBox();
+            this.SuspendLayout();
+            // 
+            // button1
+            // 
+            resources.ApplyResources(this.button1, "button1");
+            this.button1.Name = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
+            // dateTimePicker1
+            // 
+            resources.ApplyResources(this.dateTimePicker1, "dateTimePicker1");
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.Name = "label1";
+            // 
+            // monthCalendar1
+            // 
+            resources.ApplyResources(this.monthCalendar1, "monthCalendar1");
+            this.monthCalendar1.Name = "monthCalendar1";
+            // 
+            // languageSelector
+            // 
+            resources.ApplyResources(this.languageSelector, "languageSelector");
+            this.languageSelector.FormattingEnabled = true;
+            this.languageSelector.Name = "languageSelector";
+            this.languageSelector.SelectedIndexChanged += new System.EventHandler(this.languageSelector_SelectedIndexChanged);
+            // 
+            // Form1
+            // 
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Text = "Form1";
+            this.Controls.Add(this.languageSelector);
+            this.Controls.Add(this.monthCalendar1);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.button1);
+            this.Name = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MonthCalendar monthCalendar1;
+        private System.Windows.Forms.ComboBox languageSelector;
     }
 }
 

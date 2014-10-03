@@ -1,9 +1,12 @@
-﻿@{
+﻿@using System.Globalization
+@{
     ViewBag.Title = @Invariants.ApplicationName;
 }
 <div class="row">
     <div class="col-md-4 pull-right">
         <h3>Supported languages</h3>
+        <h6>UICulture: @System.Globalization.CultureInfo.CurrentUICulture.EnglishName</h6>
+        <h6>Culture: @System.Globalization.CultureInfo.CurrentCulture.EnglishName</h6>
         <h6>Current language: @Localized.ResourceLanguage</h6>
         <ul>
             @foreach (var c in ViewBag.Cultures)
@@ -23,6 +26,7 @@
     </div>
     <div class="col-md-2 col-lg-offset-1">
         <h2>More</h2>
-        <p>Here</p>
+        <p>@DateTime.Now.ToLongDateString()</p>
+        <p>@Decimal.Parse("1234567.89", CultureInfo.InvariantCulture).ToString("c")</p>
     </div>
 </div>
