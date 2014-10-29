@@ -129,4 +129,7 @@
   <data name="ResourceLanguage" xml:space="preserve">
     <value>en</value>
   </data>
+  <data name="TestText" xml:space="preserve">
+    <value>This is totally from a resource file!</value>
+  </data>
 </root>

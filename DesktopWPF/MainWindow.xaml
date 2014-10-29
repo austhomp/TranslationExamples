@@ -1,8 +1,10 @@
 ﻿<Window x:Class="DesktopWPF.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        Title="MainWindow" Height="350" Width="525">
-    <Grid>
-        
-    </Grid>
+        xmlns:SharedResources="clr-namespace:SharedResources;assembly=SharedResources"
+        Title="MainWindow" Height="500" Width="600">
+    <StackPanel>
+        <Label Content="{x:Static SharedResources:Localized.TestText}"/>
+        <Label Content="This is not from a resource file"/>
+    </StackPanel>
 </Window>

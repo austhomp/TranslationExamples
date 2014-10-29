@@ -95,5 +95,14 @@ namespace SharedResources {
                 return ResourceManager.GetString("ResourceLanguage", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is totally from a resource file!.
+        /// </summary>
+        public static string TestText {
+            get {
+                return ResourceManager.GetString("TestText", resourceCulture);
+            }
+        }
     }
 }
