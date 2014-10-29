@@ -12,7 +12,7 @@ namespace WebAPI.Controllers
         // GET api/values
         public IEnumerable<string> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { SharedResources.Localized.Greeting, SharedResources.Localized.TestText };
         }
 
         // GET api/values/5
