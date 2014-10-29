@@ -23,8 +23,8 @@
           <target state="translated">qps-ploc</target>
         </trans-unit>
         <trans-unit id="Resx/TestText" translate="yes" xml:space="preserve">
-          <source>Thiis is totally from a resource file!</source>
-          <target state="new">Thiis is totally from a resource file!</target>
+          <source>This is totally from a resource file!</source>
+          <target state="new">This is totally from a resource file!</target>
         </trans-unit>
       </group>
     </body>
